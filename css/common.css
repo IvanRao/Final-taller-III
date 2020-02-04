@@ -1,0 +1,31 @@
+body {
+  background-color: whitesmoke;
+  margin-top: 70px; 
+}
+
+.verticalLine {
+  border-left: thick solid #ff0000;
+}
+
+#vertical-line {
+  border-right: 1px solid #ccc;
+}
+
+
+
+
+
+<div class="row">
+<div class="col">
+</div>
+<div class="col">
+</div>
+<div class="col">
+</div>
+<div class="w-100"></div>
+<div class="col">
+</div>
+<div class="col">
+</div>
+<div class="col">
+</div>
