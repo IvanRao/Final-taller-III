@@ -1,31 +1,20 @@
 body {
   background-color: whitesmoke;
-  margin-top: 70px; 
-}
-
-.verticalLine {
-  border-left: thick solid #ff0000;
+  margin-top: 56px; 
 }
 
 #vertical-line {
   border-right: 1px solid #ccc;
+  margin-top: 10px; 
+}
+
+#sidebar {
+  /* background-color: rgb(168, 168, 168); */
+  position: sticky;
+  padding: 0%;
 }
 
 
 
 
 
-<div class="row">
-<div class="col">
-</div>
-<div class="col">
-</div>
-<div class="col">
-</div>
-<div class="w-100"></div>
-<div class="col">
-</div>
-<div class="col">
-</div>
-<div class="col">
-</div>
