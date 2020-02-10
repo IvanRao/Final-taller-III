@@ -55,29 +55,6 @@ function Editar(id) {
 
 function editarProducto() {
   $('#editarJuego').addEventListener('click', function() {
-    /*getBase64($("#fileEditar").files[0])
-            .then((b64) => {
-                const juegos = {
-                    "id" : $("#id_juego").value,
-                    "nombre" : $("#editar_nombre").value,
-                    "precio" : $("#editar_precio").value,
-                    "imagen" : b64
-                }
-
-            console.log(juegos)
-
-            RestApi.put("/api/juegos", juegos)
-                .then((msj)=>{
-                console.log('El producto se editó con éxito')
-                $("#cerrar").click();
-                abrirPanel();
-            })
-                .catch((err)=>{
-                console.error(err)
-            })
-
-        })*/
-
     if ($('#fileJuegosEditar').files[0] == null) {
       const juegos = {
         id: $('#id_juego').value,
@@ -119,57 +96,6 @@ function editarProducto() {
     }
   });
 }
-
-/*const juegos = {
-            "id" : $("#id_juego").value,
-            "nombre" : $("#editar_nombre").value,
-            "precio" : $("#editar_precio").value,
-            "consolas_id" : $("#consolaSelectEditar").value
-        }
-
-        RestApi.put("/api/juegos", juegos)
-            .then((msj)=>{
-            console.log('El producto se edito con éxito')
-            $("#cerrarEditar").click();
-            abrirPanel();
-        })
-            .catch((err)=>{
-            console.error(err)
-        })*/
-
-/*if($("#file").files[0] == null){
-             const producto = {
-                    "id" : localStorage.idProductoEditar,
-                    "nombre" : $("#nombre").value,
-                    "precio" : $("#precio").value,
-                    "imagen" : null
-                }
-
-                RestApi.put("/api/producto", producto)
-
-                .then((msg)=>{
-                    console.log(msg)
-                }).catch((err)=>console.error(err))
-        }else{
-            getBase64($("#file").files[0])
-            .then((b64) => {
-                const producto = {
-                    "id" : localStorage.idProductoEditar,
-                    "nombre" : $("#nombre").value,
-                    "precio" : $("#precio").value,
-                    "imagen" : b64
-                }
-
-                RestApi.put("/api/producto", producto)
-
-                .then((msg)=>{
-                    console.log(msg)
-                }).catch((err)=>console.error(err))
-
-            }).catch((err)=>console.error(err))
-
-
-        }*/
 
 function eliminarProducto(id) {
   RestApi.del('/api/juegos/' + id)
